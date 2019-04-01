@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="main/main.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <link rel="stylesheet" href="animate.css" type = "text/css">
+            <script src="wow.min.js"></script>  
+    <title>NIC Grad Show</title>
+
+    <style>
+    #mapContainer {
+    position: relative;
+    top: 7em;
+    right: 10em;
+    bottom: 10em;
+    left:  10em;
+    height: 400px;
+ 
+}</style>
+</head>
+<body>
+        <div id="navbar">
+<header id="float-left">logo</header>
+  <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+  <a  href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+</div>
+    <section>            
+            <h1>
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-easing="ease-out-bounce">stand up  </span>
+
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">design <br></span>
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="500"
+            data-sal-easing="ease-out-bounce">and a whole </span> 
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="700"
+            data-sal-easing="ease-out-bounce">load of <br></span>
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="900"
+            data-sal-easing="ease-out-bounce">code!</span>
+            </h1>
+            <div class='icon-scroll' id="icon"><div/>
+    </section>
+    <section class="example-classname">
+            <h1 data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">we </span>
+
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="500"
+            data-sal-easing="ease-out-bounce">are <br></span>
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="700"
+            data-sal-easing="ease-out-bounce">  amazing: <br></span> 
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="900"
+            data-sal-easing="ease-out-bounce">designers</span>
+            </h1>
+        </section>
+        <section class="example-classname">
+                <h1 data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">we </span>
+
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="500"
+            data-sal-easing="ease-out-bounce">are <br></span>
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="700"
+            data-sal-easing="ease-out-bounce">  also great: <br></span> 
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="900"
+            data-sal-easing="ease-out-bounce">coders</span>
+            </h1>
+            </section>
+            <section id="graduates">
+                        <div class="left">
+                        <h1 data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">meet the <br> </span>
+
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="500"
+            data-sal-easing="ease-out-bounce">graduating <br></span>
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="700"
+            data-sal-easing="ease-out-bounce">  students of <br></span> 
+            
+            <span data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="900"
+            data-sal-easing="ease-out-bounce">2019</span>
+            </h1>
+                 </div>
+                    <div class="right"
+                    data-sal-duration = "1200"
+                    data-sal="slide-down"
+                    data-sal-delay="600"
+                    data-sal-easing="ease-out-bounce">
+                        <img src="img/swipe.svg" alt="">
+                    </div>
+                    </section>
+    <section class="example-classname">
+        <div class="left">
+            <h1 data-sal-duration = "1200"
+data-sal="slide-up"
+data-sal-delay="300"
+data-sal-easing="ease-out-bounce">
+<span data-sal-duration = "1200"
+data-sal="slide-up"
+data-sal-delay="300"
+data-sal-easing="ease-out-bounce">our </span>
+
+<span data-sal-duration = "1200"
+data-sal="slide-up"
+data-sal-delay="500"
+data-sal-easing="ease-out-bounce">show <br></span>
+
+<span data-sal-duration = "1200"
+data-sal="slide-up"
+data-sal-delay="700"
+data-sal-easing="ease-out-bounce"> details <br></span> 
+
+
+</h1>
+     </div>
+        <div class="right"
+        data-sal-duration = "1200"
+        data-sal="slide-down"
+        data-sal-delay="300"
+        data-sal-easing="ease-out-bounce">
+        <div class = "right" id="mapContainer"> </div>
+        </div>
+        </section>
+        <section class="example-classname">
+            <div class="one"
+                data-sal-duration = "1200"
+                data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-easing="ease-out-bounce"> 
+                <h3>Meet</h3>
+                <p>a paragraph here</p>
+            </div>
+            <div class="two"
+            data-sal-duration = "1200"
+            data-sal="slide-up"
+            data-sal-delay="500"
+            data-sal-easing="ease-out-bounce"> 
+            <h3>our</h3>
+            <p>a paragraph here</p>
+        </div>
+        <div class="three"
+        data-sal-duration = "1200"
+        data-sal="slide-up"
+        data-sal-delay="700"
+        data-sal-easing="ease-out-bounce"> 
+        <h3>Team</h3>
+        <p>a paragraph here</p>
+     </div>
+     <div class="four"
+     data-sal-duration = "1200"
+     data-sal="slide-up"
+     data-sal-delay="500"
+     data-sal-easing="ease-out-bounce"> 
+     <h3>our</h3>
+     <p>a paragraph here</p>
+ </div>
+ <div class="five"
+ data-sal-duration = "1200"
+ data-sal="slide-up"
+ data-sal-delay="700"
+ data-sal-easing="ease-out-bounce"> 
+ <h3>Team</h3>
+ <p>a paragraph here</p>
+</div>
+            </section>
+          
+            <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+            <script>
+       
+                var map = L.map('mapContainer').setView([49.708511, -124.969360], 16);
+    
+                var Layer = L.tileLayer('http:{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href =http://www.openstreetmap.org/copyright">OpenSreetMap</a> contributors, &copy; <a href="https://catro.com/attributions">CARTO</a>'
+                }).addTo(map);        
+
+                L.marker([49.708510, -124.969360]).addTo(map)
+                    .bindPopup('North Island College, </br> 2300 Ryan Rd, Courtenay ')
+                    .openPopup();
+            </script>
+
+    <script src ="node_modules/sal.js/dist/sal.js"></script>
+    <script>
+        sal({
+            threshold: 1,
+            once: false,
+        });
+    </script>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+    <script>
+    $(window).scroll(function(){
+  var threshold = 100;
+  var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) / threshold;
+	if( op <= 0 ){
+		$("#icon").hide();
+	} else {
+		$("#icon").show();
+	}
+	$("#icon").css("opacity", op ); 
+});
+</script>
+</body>
+</html>

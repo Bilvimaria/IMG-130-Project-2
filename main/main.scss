@@ -1,0 +1,176 @@
+body,html{
+    height: 100vh;
+    margin: 0;
+}
+body{
+    font-family: 'Righteous', cursive;
+}
+section{
+    height: calc(100vh-8em);
+    padding: 4em;
+    align-items: center;
+
+    h1{
+        font-size: 6em;
+        transform: translateY(50%);
+        line-height: .9em; 
+        font-weight: bold;
+    }
+    &:nth-of-type(1){
+        background: #EB3855;
+        color: white;
+   
+    }
+   
+    &:nth-of-type(2){
+        background: #EB3855;
+        color: white;
+   
+    }
+    &:nth-of-type(3){
+        background: #EB3855;
+        color: white;
+   
+    }
+    &:nth-of-type(4){
+        background: #EB3855;
+        height: calc(60vh - 8em);
+        color: white;
+        display: grid;
+        grid-template-columns: 50% 50%;   
+
+        h1{
+            font-size: 4em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        img{
+            margin: 0 auto;
+            display: block;
+            width: 250px;
+        }
+    }
+
+    &:nth-of-type(5), &:nth-of-type(6){
+        background: #EB3855;
+        height: calc(60vh - 8em);
+        color: white;
+        display: grid;
+        grid-template-columns: 50% 50%;   
+
+        h3{
+            font-size: 3em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        img{
+            margin: 0 auto;
+            display: block;
+            width: 250px;
+        }
+    }
+    &:nth-of-type(6){
+        background-color: #EB3855;
+        grid-template-columns: repeat(5,20%);
+        p{
+            width: 50%;
+        }
+        }
+}
+.grid{
+    background: #EB3855;
+    height: calc(70vh - 8em);
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+
+  #navbar {
+    overflow: hidden;
+    background-color: #EB3855;
+    display: flex;
+justify-content: flex-end
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: black;
+    color: gray;
+  }
+  
+  #navbar a.active {
+    background-color: #EB3855;
+    color: white;
+  }
+
+  
+  .sticky {
+    position: fixed;
+    top: 2;
+    width: 100%;
+  }
+ #float-left{
+float: left;
+position: fixed;
+top: 0;
+left: 0;
+background-color:  #EB3855;
+margin-top: 0.9em;
+margin-bottom: 0.9em;
+margin-left: 0.9em;
+margin-right: 0.9em;
+ }
+
+
+.icon-scroll,
+.icon-scroll:before{
+    position: absolute;
+    left: 50%;
+}
+ 
+
+.icon-scroll{
+    position: fixed;
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 90%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+}
+
+
+.icon-scroll:before
+{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 5px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  
+}
+
+@keyframes scroll{
+    0%{
+        opacity: 1
+    }
+ 
+  100%{
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
