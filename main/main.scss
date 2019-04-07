@@ -88,8 +88,7 @@ section{
   }
   
   #navbar a:hover {
-    background-color: black;
-    color: gray;
+    color: #ff800a;
   }
   
   #navbar a.active {
@@ -109,7 +108,6 @@ position: fixed;
 top: 0;
 left: 0;
 background-color:  #EB3855;
-margin-top: 0.9em;
 margin-bottom: 0.9em;
 margin-left: 0.9em;
 margin-right: 0.9em;
@@ -248,4 +246,19 @@ margin-right: 0.9em;
     background: #ff800a;
     box-shadow: 2px 2px 2px #000;
     z-index: 2;
+}
+
+footer{
+  position: fixed;
+  right:1em;
+  bottom: 1em;
+  color: white;
+}
+#team{
+  img {
+    border-radius: 50%;
+  }
+  h3{
+    font-size: 1em;
+  }
 }
