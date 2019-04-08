@@ -62,7 +62,7 @@ body {
        grid-row: 14/16;
        color: white;
        font-size: 1em;
-       margin-right: 2em;
+       margin-left: 2em;
      }
      .image-container {
        grid-column: 1;
